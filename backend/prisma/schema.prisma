@@ -1,0 +1,53 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+model User {
+  id                String    @id @default(uuid())
+  email             String    @unique
+  password          String
+  name              String
+  restaurantName    String?
+  restaurantAddress String?
+  googlePlaceId     String?
+  createdAt         DateTime  @default(now())
+  updatedAt         DateTime  @updatedAt
+  reviews           Review[]
+  alerts            Alert[]
+}
+
+model Review {
+  id                String    @id @default(uuid())
+  userId            String
+  user              User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+  googleReviewId    String?   @unique
+  authorName        String
+  authorPhotoUrl    String?
+  rating            Int
+  text              String    @default("")
+  publishedAt       DateTime
+  isRead            Boolean   @default(false)
+  sentiment         String?   // positive, neutral, negative
+  aiResponse        String?
+  responseStatus    String    @default("pending") // pending, generated, published
+  createdAt         DateTime  @default(now())
+  updatedAt         DateTime  @updatedAt
+  alert             Alert?
+}
+
+model Alert {
+  id          String   @id @default(uuid())
+  userId      String
+  user        User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  reviewId    String   @unique
+  review      Review   @relation(fields: [reviewId], references: [id], onDelete: Cascade)
+  isRead      Boolean  @default(false)
+  createdAt   DateTime @default(now())
+}
