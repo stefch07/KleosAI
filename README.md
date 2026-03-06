@@ -1,44 +1,83 @@
-# KleosAI
+KleosAI
 
-KleosAI is an AI-powered reputation manager for restaurants.
+KleosAI is an AI-powered reputation management tool designed for agencies and local businesses.
 
-It helps restaurants monitor Google reviews, generate professional AI responses, and protect their online reputation through a simple dashboard.
+It helps teams monitor Google reviews, generate professional AI responses instantly, and manage online reputation across multiple locations from a single dashboard.
 
-## Features
+Problem
 
-- Google review monitoring
-- AI-generated review responses
-- Negative review alerts
-- Reputation dashboard
-- Restaurant-focused workflow
+Agencies and businesses managing multiple locations spend significant time responding to Google reviews manually.
 
-## MVP Scope
+Common issues include:
+
+Responding to reviews across many locations
+
+Maintaining consistent brand tone
+
+Quickly handling negative reviews
+
+Monitoring reputation performance
+
+KleosAI simplifies this workflow with AI-assisted review management.
+
+Solution
+
+KleosAI centralizes Google reviews into one dashboard and uses AI to generate high-quality responses that can be edited and posted instantly.
+
+This allows agencies and businesses to respond faster and maintain a stronger online reputation.
+
+Core Features
+
+Google review monitoring
+
+AI-generated review responses
+
+Negative review alerts
+
+Multi-location dashboard
+
+Reputation performance insights
+
+Agency-friendly workflow
+
+MVP Scope
 
 The first version of KleosAI focuses on:
 
-- Connecting a restaurant's Google Business profile
-- Fetching and displaying Google reviews
-- Generating AI-powered responses to reviews
-- Alerting the owner about negative reviews
-- Showing basic reputation metrics
+Connecting Google Business Profiles
 
-## Tech Stack
+Fetching and displaying Google reviews
 
-- Next.js
-- TailwindCSS
-- Supabase
-- OpenAI API
-- Stripe (planned)
-- Google Business Profile API
+Generating AI-powered review responses
 
-## Vision
+Highlighting negative reviews
 
-KleosAI aims to help restaurants save time, respond faster, and maintain a stronger online reputation with AI.
+Supporting multiple locations for agencies
 
-## Status
+Tech Stack
+
+Next.js
+
+TailwindCSS
+
+Supabase (database + auth)
+
+OpenAI API
+
+Google Business Profile API
+
+Stripe (planned for billing)
+
+Vision
+
+KleosAI aims to become the simplest AI-powered review management platform for agencies and businesses managing local brands.
+
+By automating review workflows and improving response quality, KleosAI helps businesses protect and grow their online reputation.
+
+Status
 
 Currently in MVP development.
 
-## Author
+Author
 
 Built by Stefanos Charalampous.
