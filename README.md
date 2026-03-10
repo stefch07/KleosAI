@@ -1,83 +1,63 @@
-KleosAI
+# KleosAI
 
-KleosAI is an AI-powered reputation management tool designed for agencies and local businesses.
+KleosAI is an AI-powered review management tool for agencies and local businesses.
 
-It helps teams monitor Google reviews, generate professional AI responses instantly, and manage online reputation across multiple locations from a single dashboard.
+It helps teams monitor Google reviews, generate professional AI replies, and manage reputation across multiple business locations from one dashboard.
 
-Problem
+## Problem
 
-Agencies and businesses managing multiple locations spend significant time responding to Google reviews manually.
+Agencies and local businesses spend too much time handling online reviews manually.
 
 Common issues include:
 
-Responding to reviews across many locations
+- checking multiple locations for new reviews
+- replying quickly and consistently
+- handling negative reviews properly
+- keeping brand tone professional
+- managing review workflows across clients
 
-Maintaining consistent brand tone
+## Solution
 
-Quickly handling negative reviews
+KleosAI centralizes reviews into one simple dashboard and uses AI to generate high-quality replies in seconds.
 
-Monitoring reputation performance
+It is built for agencies managing local businesses and for businesses managing their own reputation.
 
-KleosAI simplifies this workflow with AI-assisted review management.
+## Core Features
 
-Solution
+- Multi-location review inbox
+- AI-generated review replies
+- Negative review alerts
+- Review status tracking
+- Simple agency-friendly workflow
 
-KleosAI centralizes Google reviews into one dashboard and uses AI to generate high-quality responses that can be edited and posted instantly.
-
-This allows agencies and businesses to respond faster and maintain a stronger online reputation.
-
-Core Features
-
-Google review monitoring
-
-AI-generated review responses
-
-Negative review alerts
-
-Multi-location dashboard
-
-Reputation performance insights
-
-Agency-friendly workflow
-
-MVP Scope
+## MVP Scope
 
 The first version of KleosAI focuses on:
 
-Connecting Google Business Profiles
+- connecting Google Business Profiles
+- fetching and displaying reviews
+- generating AI-powered replies
+- highlighting negative reviews
+- supporting multiple locations
+- allowing users to copy and use replies quickly
 
-Fetching and displaying Google reviews
+## Tech Stack
 
-Generating AI-powered review responses
+- Next.js
+- TailwindCSS
+- Supabase
+- OpenAI API
+- Google Business Profile API
+- Stripe (planned)
 
-Highlighting negative reviews
+## Vision
 
-Supporting multiple locations for agencies
+KleosAI aims to become the simplest AI-powered review workflow tool for agencies and local businesses.
 
-Tech Stack
-
-Next.js
-
-TailwindCSS
-
-Supabase (database + auth)
-
-OpenAI API
-
-Google Business Profile API
-
-Stripe (planned for billing)
-
-Vision
-
-KleosAI aims to become the simplest AI-powered review management platform for agencies and businesses managing local brands.
-
-By automating review workflows and improving response quality, KleosAI helps businesses protect and grow their online reputation.
-
-Status
+## Status
 
 Currently in MVP development.
 
-Author
+## Author
 
 Built by Stefanos Charalampous.
